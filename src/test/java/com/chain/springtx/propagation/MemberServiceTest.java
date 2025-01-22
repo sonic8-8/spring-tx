@@ -20,6 +20,11 @@ class MemberServiceTest {
     @Autowired
     LogRepository logRepository;
 
+    /**
+     * MemberService    @Transactional:OFF
+     * MemberRepository @Transactional:ON
+     * LogRepository    @Transactional:ON
+     */
     @Test
     void outerTxOff_success() {
         String username = "outerTxOff_success";
