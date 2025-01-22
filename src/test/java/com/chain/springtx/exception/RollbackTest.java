@@ -61,7 +61,7 @@ public class RollbackTest {
 
         @Transactional(rollbackFor = MyException.class)
         public void rollbackFor() throws MyException {
-            log.info("call rollbackFof");
+            log.info("call rollbackFor");
             throw new MyException();
         }
     }
